@@ -11,9 +11,3 @@ eureka:
     leaseRenewalIntervalInSeconds: 30
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-spring:
-  datasource:
-    url: jdbc:postgresql://db.mydomain.com/servicedb
-    username: test
-    password: test
-    driver-class-name: org.postgresql.Driver
